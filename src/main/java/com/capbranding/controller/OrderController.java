@@ -52,18 +52,8 @@ public class OrderController {
 		logger.info("Order viewAllOrders()");
 		return orderRepo.findAll();
 	}
-	/*  
-   @GetMapping("/order/{date}")
-   public List<Order> viewOrdersByDate(@RequestBody LocalDate date) {
-	   		logger.info("Order viewAllOrders()");
-    return orderService.viewAllOrders(date);
-}
-   @GetMapping("/order/{location}")
-   public List<Order> viewOrdersByLocation(@RequestBody String location) {
-	   logger.info("Order viewAllOrdersByLocation()");
-	return orderService.viewAllOrdersByLocation(location);
-   }
-	 */  
+	
+   
 
 	@DeleteMapping("/order/orderId")
 	public Order removeOrder(@PathVariable("orderId") int orderId) {

@@ -166,13 +166,13 @@ public class Address {
 	}
 
 
-	public Employee getCustomerAdd() {
+	public Employee getEmployeeAdd() {
 		return employeeAdd;
 	}
 
 
-	public void setCustomerAdd(Employee customerAdd) {
-		this.employeeAdd = customerAdd;
+	public void setEmployeeAdd(Employee employeeAdd) {
+		this.employeeAdd = employeeAdd;
 	}
 
 

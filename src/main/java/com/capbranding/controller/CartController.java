@@ -40,7 +40,7 @@ public class CartController {
 		return cartService.addCart(cart);
 	}
 
-	@DeleteMapping("/cartId{cartId}")
+	@DeleteMapping("/cart/{cartId}")
 	public Cart removeCart(@PathVariable("cartId") int cartId)
 	{
 		logger.info("Cart removeCart()");
