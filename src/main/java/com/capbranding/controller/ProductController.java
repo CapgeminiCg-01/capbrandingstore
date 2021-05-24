@@ -38,14 +38,7 @@ public class ProductController {
 		return productService.addProduct(product);
 
 	}
-	/*
-	@GetMapping("/product")
-    public List<Product> viewAllProduct()
-    {
-		logger.info("Entered viewAllProducts");
-        return productService.viewAllProducts();
-    }
-	 */
+	
 	@PutMapping("/product")
 	public Product updateProduct(@Valid@RequestBody Product product)
 	{
@@ -62,14 +55,7 @@ public class ProductController {
 		return productService.viewProduct(prodId);
 	}
 
-	/*
-    @GetMapping("/product/{catId}")
-    public List<Product> viewProductsByCategory(@PathVariable("catId") int catId)
-    {
-    	logger.info("Entered viewProductByCategory");
-        return productService.viewProductsByCategory(catId);
-    }
-	 */
+
 	@DeleteMapping("/product/{prodId}")
 	public Product removeProduct(@PathVariable("prodId") int prodId)
 	{
